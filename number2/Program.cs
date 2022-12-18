@@ -1,13 +1,12 @@
 ﻿Console.WriteLine("Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет. ");
 Console.WriteLine("Введите число: ");
 int a = int.Parse(Console.ReadLine()!);
-if (a < 100)
+string Number = Convert.ToString(a);
+if (Number.Length > 2)
 {
-    Console.WriteLine("Третьей цифры нет!");
+  Console.WriteLine("третья цифра: " + Number[2]);
 }
-else
+else 
 {
-   string str = Convert.ToString(a);
-   Console.Write("Третья цифра: ");
-   Console.WriteLine(a/100%10); 
+  Console.WriteLine("третьей цифры нет");
 }
